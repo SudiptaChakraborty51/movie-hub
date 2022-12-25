@@ -1,6 +1,10 @@
+*{
+  scroll-behavior: smooth;
+}
+
 .App {
   min-height: 100vh;
-  background-color: #228BE6;
+  background-color: #021d37;
   color: white;
   padding-top: 130px;
   padding-bottom: 70px;
