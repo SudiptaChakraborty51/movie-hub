@@ -32,7 +32,7 @@ const Movies = () => {
     <div>
       <span className='pageTitle'>Movies</span>
       <Genres 
-        type="movie"
+        type="tv"
         selectedGenres={selectedGenres}
         setSelectedGenres={setSelectedGenres}
         genres={genres}
