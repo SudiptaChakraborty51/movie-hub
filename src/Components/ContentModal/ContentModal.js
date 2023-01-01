@@ -7,6 +7,8 @@ import Modal from '@mui/material/Modal';
 import "./ContentModal.css";
 import axios from 'axios';
 import { img_500, unavailable, unavailableLandscape } from '../config/config'; 
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import Carousel from "../Carousel/Carousel";
 
 const style = {
   position: 'absolute',
@@ -53,8 +55,8 @@ export default function ContentModal({ children, media_type, id}) {
   }, []);
 
   return (
-    <div>
-      <Button className='media' onClick={handleOpen}>{children}</Button>
+    <>
+      <div className='media' onClick={handleOpen}>{children}</div>
       <Modal
         open={open}
         onClose={handleClose}
@@ -83,7 +85,7 @@ export default function ContentModal({ children, media_type, id}) {
                   className="ContentModal__landscape"
                 />
                 <div className="ContentModal__about">
-                  <span className="ContentModal__title">
+                  <span className="ContentModal__title" style={{margin: "20px 0px"}}>
                     {content.name || content.title} (
                     {(
                       content.first_air_date ||
@@ -100,12 +102,26 @@ export default function ContentModal({ children, media_type, id}) {
                     {content.overview}
                   </span>
 
+                  <div>
+                    <Carousel id={id} media_type={media_type} />
+                  </div>
+
+                  <Button
+                    variant="contained"
+                    startIcon={<YouTubeIcon />}
+                    color="secondary"
+                    style={{fontWeight: "bold", margin: "5px 0px"}}
+                    target="__blank"
+                    href={`https://www.youtube.com/watch?v=${video}`}
+                  >
+                    Watch the Trailer
+                  </Button>
                   
                 </div>
               </div>
           )}
         </Box>
       </Modal>
-    </div>
+    </>
   );
 }
