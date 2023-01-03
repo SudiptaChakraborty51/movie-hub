@@ -49,7 +49,7 @@ export default function ContentModal({ children, media_type, id}) {
     const { data } = await axios.get(
       `https://api.themoviedb.org/3/${media_type}/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
     );
-
+    console.log(`https://api.themoviedb.org/3/${media_type}/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`);
     setContent(data);
     // console.log(data);
   };
@@ -70,10 +70,11 @@ export default function ContentModal({ children, media_type, id}) {
 
   return (
     <>
-      <div className='media' onClick={handleOpen}>{children}</div>
+      <div className='media' onClick={handleOpen} color="inherit">{children}</div>
       <Modal
         open={open}
         onClose={handleClose}
+        closeAfterTransition
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
