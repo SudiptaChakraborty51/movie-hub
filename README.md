@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+# A Movies and TV Series App in React JS
+## Material UI for frontend
+## MovieDB API for backend
+## Full responsive fuctionality
+
+![image](https://user-images.githubusercontent.com/76644901/210402176-fc1e4e59-0ddf-4c68-afaa-e7c668aedafa.png)
+![image](https://user-images.githubusercontent.com/76644901/210402256-f0bd1c93-6214-4392-942d-87b4a164bce0.png)
+![image](https://user-images.githubusercontent.com/76644901/210402479-41930ac9-bdbf-4970-9da8-65cd0ae04f57.png)
+![image](https://user-images.githubusercontent.com/76644901/210402601-06f91f0e-8023-4967-93f8-05d483659946.png)
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
