@@ -38,10 +38,10 @@ export default function SimpleBottomNavigation() {
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction label="Trending" icon={<WhatshotIcon />} />
-        <BottomNavigationAction label="Movies" icon={<MovieIcon />} />
-        <BottomNavigationAction label="TV Series" icon={<TvIcon />} />
-        <BottomNavigationAction label="Search" icon={<SearchIcon />} />
+        <BottomNavigationAction style={{fontWeight: "bold"}} label="Trending" icon={<WhatshotIcon />} />
+        <BottomNavigationAction style={{fontWeight: "bold"}} label="Movies" icon={<MovieIcon />} />
+        <BottomNavigationAction style={{fontWeight: "bold"}} label="TV Series" icon={<TvIcon />} />
+        <BottomNavigationAction style={{fontWeight: "bold"}} label="Search" icon={<SearchIcon />} />
       </BottomNavigation>
     </Box>
   );
