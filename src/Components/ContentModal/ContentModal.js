@@ -2,7 +2,6 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import "./ContentModal.css";
 import axios from 'axios';
@@ -22,6 +21,21 @@ const style = {
   bgcolor: '#228BE6',
   border: '1px solid #021d37',
   borderRadius: 10,
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+
+  '@media (max-width: 800px)': {
+    padding: "15px"
+  },
+
+  '@media (max-width: 500px)': {
+    padding: "12px"
+  },
+
+  '@media (max-width: 350px)': {
+    padding: "10px"
+  },
 };
 
 export default function ContentModal({ children, media_type, id}) {
